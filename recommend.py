@@ -134,6 +134,8 @@ def format_recommendation(record):
     tags = fields.get("特色标签", [])
     reason = fields.get("推荐理由", "")
     rating = fields.get("推荐指数", "")
+    drive_time = fields.get("距未来科技城车程", "")
+    review = fields.get("游玩评价", "")
     
     # 生成小贴士
     tips = generate_tips(fields)
@@ -142,12 +144,16 @@ def format_recommendation(record):
 🎡 本周末推荐：**{spot_name}**
 
 📍 区域：{area}
+🚗 距未来科技城：{drive_time}
 👶 适合年龄：{age_range}
 🏷️ 特色：{' '.join(tags)}
 ⭐ 推荐指数：{rating}
 
 💡 推荐理由：
 {reason}
+
+📝 游玩评价：
+{review}
 
 📋 小贴士：
 {tips}
