@@ -1,0 +1,18 @@
+# Skill 元数据
+name: hangzhou-parenting-spots
+version: 1.0.0
+description: 杭州亲子游玩地点推荐
+author: 虎子 (Hǔzi)
+license: MIT
+
+# 依赖
+requires:
+  - feishu extension
+
+# 标签
+tags:
+  - hangzhou
+  - parenting
+  - travel
+  - recommendation
+  - feishu
